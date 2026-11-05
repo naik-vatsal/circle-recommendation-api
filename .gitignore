@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+var/
+*.sqlite3
+*.sqlite3-journal
+.env
+/output/

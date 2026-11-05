@@ -1,0 +1,27 @@
+[project]
+name = "circle-recommendations"
+version = "2.0.0"
+description = "Explainable, diverse recommendations for the supplied Lean In Circle dataset"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115,<1",
+    "uvicorn>=0.30,<1",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B"]
+
+[dependency-groups]
+dev = [
+    "httpx2>=2.16.0",
+    "pytest>=8,<10",
+    "ruff>=0.9,<1",
+]
