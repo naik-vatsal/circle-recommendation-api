@@ -1,0 +1,133 @@
+{
+  "algorithm_version": "rules-v2",
+  "as_of": "2026-09-21T00:00:00+00:00",
+  "dataset_sha256": "a753278c890d0f9473c4171cf6886a7f5f8154e1e9d4162e96f0c127bc3c691a",
+  "interpretation": "Synthetic-data diagnostics only; no relevance labels, causal lift, or member-outcome claims.",
+  "limit": 5,
+  "passed": true,
+  "recency_window_sensitivity": {
+    "30": {
+      "eligible_user_circle_pairs": 3116
+    },
+    "45": {
+      "eligible_user_circle_pairs": 3116
+    },
+    "60": {
+      "eligible_user_circle_pairs": 3116
+    }
+  },
+  "scenario_checks": {
+    "cold_start_has_five": true,
+    "full_and_inactive_absent": true,
+    "healthy_promotion_first": true,
+    "negotiation_not_repeated": true,
+    "obvious_matches_first_two": true
+  },
+  "scenario_top5_circle_ids": {
+    "15": [
+      13,
+      11,
+      23,
+      5,
+      31
+    ],
+    "23": [
+      22,
+      19,
+      11,
+      24,
+      1
+    ],
+    "42": [
+      1,
+      10,
+      13,
+      31,
+      24
+    ],
+    "7": [
+      6,
+      5,
+      31,
+      11,
+      39
+    ]
+  },
+  "users_evaluated": 100,
+  "variants": {
+    "activity_and_access": {
+      "attainable_interest_coverage": 0.188,
+      "distinct_circles_exposed": 9,
+      "eligibility_violations": 0,
+      "largest_first_position_share": 0.76,
+      "primary_interest_slots": 29,
+      "related_interest_slots": 42,
+      "repeated_primary_topic_slots": 136,
+      "returned_slots": 500
+    },
+    "final": {
+      "attainable_interest_coverage": 1.0,
+      "distinct_circles_exposed": 32,
+      "eligibility_violations": 0,
+      "largest_first_position_share": 0.13,
+      "primary_interest_slots": 117,
+      "related_interest_slots": 70,
+      "repeated_primary_topic_slots": 0,
+      "returned_slots": 500
+    },
+    "topic_ranked": {
+      "attainable_interest_coverage": 1.0,
+      "distinct_circles_exposed": 33,
+      "eligibility_violations": 0,
+      "largest_first_position_share": 0.13,
+      "primary_interest_slots": 162,
+      "related_interest_slots": 138,
+      "repeated_primary_topic_slots": 86,
+      "returned_slots": 500
+    },
+    "without_participation": {
+      "attainable_interest_coverage": 1.0,
+      "distinct_circles_exposed": 33,
+      "eligibility_violations": 0,
+      "largest_first_position_share": 0.11,
+      "primary_interest_slots": 117,
+      "related_interest_slots": 70,
+      "repeated_primary_topic_slots": 0,
+      "returned_slots": 500
+    }
+  },
+  "weight_sensitivity": {
+    "activity_x0.9": {
+      "mean_top5_overlap": 0.974,
+      "same_first_position_share": 1.0
+    },
+    "activity_x1.1": {
+      "mean_top5_overlap": 0.984,
+      "same_first_position_share": 0.98
+    },
+    "interests_x0.9": {
+      "mean_top5_overlap": 1.0,
+      "same_first_position_share": 1.0
+    },
+    "interests_x1.1": {
+      "mean_top5_overlap": 1.0,
+      "same_first_position_share": 1.0
+    },
+    "memberships_x0.9": {
+      "mean_top5_overlap": 0.978,
+      "same_first_position_share": 0.97
+    },
+    "memberships_x1.1": {
+      "mean_top5_overlap": 0.984,
+      "same_first_position_share": 1.0
+    },
+    "participation_x0.9": {
+      "mean_top5_overlap": 0.996,
+      "same_first_position_share": 1.0
+    },
+    "participation_x1.1": {
+      "mean_top5_overlap": 0.986,
+      "same_first_position_share": 0.98
+    }
+  }
+}
